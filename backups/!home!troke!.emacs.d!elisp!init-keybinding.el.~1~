@@ -1,0 +1,22 @@
+(global-set-key (kbd "C-j") (make-sparse-keymap))
+
+(global-set-key (kbd "C-j C-j") 'avy-goto-char-timer)
+(global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "C-c e") 'embark-act)
+(global-set-key (kbd "C-h C-f") 'find-function)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(provide 'init-keybinding)
