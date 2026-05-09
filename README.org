@@ -16,8 +16,23 @@
 
 *** Useful Commad 
 
+
+
 ** Package 
 *** magit
+| key     | describe                                                         | Note                                                       |
+|---------+------------------------------------------------------------------+------------------------------------------------------------|
+| C-x g   | open the status buffer like 'git status'                         | type 'g' can refresh the status buffer                     |
+| p       | previous line                                                    |                                                            |
+| n       | next line                                                        |                                                            |
+| TAB     | expand or collapse the section at point                          |                                                            |
+| s       | stage the changes                                                | when success, you can see "Staged Changes"                 |
+| u       | unstage the changes                                              |                                                            |
+| c       | commit your changes like 'git commit'                            | when type 'c' , will show available commit in other buffer |
+| C-c C-c | finsh the commit after you type 'c , c' and type some infomation |                                                            |
+| P       | like 'git push' , you will prepare to push                       |                                                            |
+| h       | you can get more command info                                    |                                                            |
+
 *** avy
 *** ... 
 
