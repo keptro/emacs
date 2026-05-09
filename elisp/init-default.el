@@ -1,6 +1,14 @@
-(tool-bar-mode -1)
-(toggle-scroll-bar -1)
-(toggle-frame-maximized)
+(defun init-setup-frame(frame)
+  (with-selected-frame frame
+    (tool-bar-mode -1)
+    (toggle-scroll-bar -1)
+    (toggle-frame-maximized)
+    (menu-bar-mode -1)
+    ))
+
+(add-hook 'after-make-frame-functions #'init-setup-frame)
+(when (display-graphic-p)
+  (init-setup-frame (selected-frame)))
 
 (global-display-line-numbers-mode 1)
 (global-auto-revert-mode 1)

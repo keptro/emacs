@@ -1,0 +1,31 @@
+* Emacs Learnig
+** Basic
+*** Move
+| key | move              |
+|-----+-------------------|
+| C-f | forward-char      |
+| C-b | backward-char     |
+| C-a | beginning of line |
+| C-e | end of line       |
+| C-n | next-line         |
+| C-p | previous-line     |
+|     |                   |
+|     |                   |
+|     |                   |
+|     |                   |
+
+*** Useful Commad 
+
+** Package 
+*** magit
+*** avy
+*** ... 
+
+
+
+
+
+
+
+
+

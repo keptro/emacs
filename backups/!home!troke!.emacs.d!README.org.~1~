@@ -1,0 +1,18 @@
+* Emacs Learnig
+** PART One
+*** basic moving
+| key | move              |
+|-----+-------------------|
+| C-f | forward-char      |
+| C-b | backward-char     |
+| C-a | beginning of line |
+| C-e | end of line       |
+| C-n | next-line         |
+| C-p | previous-line     |
+|     |                   |
+|     |                   |
+|     |                   |
+
+** PART Two
+** PART Three
+
