@@ -8,9 +8,9 @@
      default))
  '(package-selected-packages
    '(autothemer avy company cond-let consult dash embark embark-consult
-		expand-region gruvbox-theme keycast llama marginalia
-		orderless posframe vertico vertico-posframe
-		with-editor)))
+		expand-region gruvbox-theme keycast llama magit
+		marginalia orderless posframe transient vertico
+		vertico-posframe with-editor)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
