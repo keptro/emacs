@@ -1,3 +1,4 @@
+#+STARTUP: indent
 * Emacs Learnig
 ** Basic
 *** Move
@@ -19,8 +20,8 @@
 
 
 ** Package 
-*** magit
-| key     | describe                                                         | Note                                                       |
+*** magitm
+| Key     | describe                                                         | Note                                                       |
 |---------+------------------------------------------------------------------+------------------------------------------------------------|
 | C-x g   | open the status buffer like 'git status'                         | type 'g' can refresh the status buffer                     |
 | p       | previous line                                                    |                                                            |
