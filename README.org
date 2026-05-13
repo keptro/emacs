@@ -10,7 +10,8 @@
 | C-e | end of line       |
 | C-n | next-line         |
 | C-p | previous-line     |
-|     |                   |
+| M-f | forward-word      |
+| M-b | backward-word     |
 |     |                   |
 |     |                   |
 |     |                   |
@@ -59,19 +60,19 @@ ref: [[https://karthinks.com/software/avy-can-do-anything/][anv-can-do-everythin
 *** ...
 
 
-* Elisp basic
+* Lisp basic
 ** String Function
 *** [length]
 #+BEGIN_SRC emacs-lisp
-(length "abc")
+(length "abc") ;3
 #+END_SRC
 
 #+RESULTS:
 : 3
 *** [substring]
 #+BEGIN_SRC emacs-lisp
-   (substring "abc123" 0 3)
-  (substring "abc123" 4)
+   (substring "abc123" 0 3) ;abc
+  (substring "abc123" 4) ;23
   ; usage (substring "String" <From> <To>) / (substring "String"  <To>) 
   ; Position start at <From> and is default to 0 , end of <To>
 #+END_SRC
@@ -80,7 +81,8 @@ ref: [[https://karthinks.com/software/avy-can-do-anything/][anv-can-do-everythin
 : 23
 
 Using <C-h f> to get more info about *String Function* or see the document
-[[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html][Emacs Lisp]] [[http://xahlee.info/emacs/emacs/elisp_string_functions.html][xahlee]]
+[[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html][Emacs Lisp
+]] [[http://xahlee.info/emacs/emacs/elisp_string_functions.html][xahlee]]
 ** Number
 *** Basic Types
 + 123 -> int type
@@ -88,7 +90,7 @@ Using <C-h f> to get more info about *String Function* or see the document
 + 123.0 -> float type
 *** Scientific
 #+BEGIN_SRC emacs-lisp
-1e3
+1e3  ;1000
 #+END_SRC
 
 #+RESULTS:
@@ -96,7 +98,7 @@ Using <C-h f> to get more info about *String Function* or see the document
 *** Binary , Hex , Octal
 #+BEGIN_SRC emacs-lisp
   ;expression:  #<expr>num
-  #b101
+  #b101 
   #xef
   #o77
 #+END_SRC
@@ -185,6 +187,7 @@ ref: [[http://xahlee.info/emacs/emacs/elisp_boolean.html][Boolean]]
 ** Local Variables
 *** let
 + [(let (<var1> <var2> ...) <body>)]
++ [(let VARLIST BODY)]
 + The body is one or more lisp expressions. The body's last expression's value is returned.
 #+BEGIN_SRC emacs-lisp
 (let (a b)
@@ -193,6 +196,14 @@ ref: [[http://xahlee.info/emacs/emacs/elisp_boolean.html][Boolean]]
  (+ a b)
 ) ;  7
 #+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+  (let ((a 3) (b 4))
+    (+ a b))
+#+END_SRC
+
+#+RESULTS:
+: 7
 
 * Block of Expression
 ** progn
@@ -226,4 +237,41 @@ similar to progn , prog1 return the first expression , prog2 return the second e
   (prog2
     (message "a")
     (message "b"))
+#+END_SRC
+* if then else
+
+** if expression
++ [(if <test> <body>)] or [(if <test> <true body> <false body>)]
++ if <false body> is empty , <false body> is default nil
+#+BEGIN_SRC emacs-lisp
+          (if (< 3 2)   ;if 3 < 2
+    	  (progn 8)
+  	  (progn 7))
+#+END_SRC
+
+#+RESULTS:
+: 7
+** when expression
++ [(when <test> <expr1> <expr2> ...)]
++ campare to if expression , when expression is not else part
+  #+BEGIN_SRC emacs-lisp
+        (when (> 3 2)
+    (setq x 3)
+    (setq y 4)
+    (+ x y)
+          )
+  #+END_SRC
+
+  #+RESULTS:
+  : 7
+
+** cond expression
++ [(cond (<condition1> <body1>) (<condition2> <body2>) ... (t <body>)]
++ like switch
+#+BEGIN_SRC emacs-lisp
+(setq ux 11)
+  (cond
+    ((eq ux 10) (message "ux = %d" ux))
+    ((not (eq ux 10)) (message "ux not 10 , ux = %d" ux))
+  (t (message "not ux")))
 #+END_SRC
