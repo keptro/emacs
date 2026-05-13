@@ -1,0 +1,22 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	new file:   awesome-tab
+#	new file:   backups/!home!troke!.emacs.d!.git!COMMIT_EDITMSG.~5~
+#	new file:   backups/!home!troke!.emacs.d!.git!COMMIT_EDITMSG.~6~
+#	new file:   eln-cache/30.1-c7a97098/mode-local-52e88da7-740c7a12.eln
+#	new file:   eln-cache/30.1-c7a97098/org-bullets-97e7a38c-3308bbbc.eln
+#	new file:   elpa/org-bullets-20200317.1740/org-bullets-autoloads.el
+#	new file:   elpa/org-bullets-20200317.1740/org-bullets-pkg.el
+#	new file:   elpa/org-bullets-20200317.1740/org-bullets.el
+#	new file:   elpa/org-bullets-20200317.1740/org-bullets.elc
+#	new file:   emacs-guess-word-game
+#	modified:   history
+#	new file:   site-lisp/emacs-application-framework
+#
