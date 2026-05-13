@@ -3,13 +3,9 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-	kill-rectangle
-	string-rectangle
-	view-emacs-news
+	eval-buffer
 	))
 
 (setq mc/cmds-to-run-once
       '(
-	electric-newline-and-maybe-indent
-	multiple-cursors-mode
 	))

@@ -1,0 +1,298 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   .mc-lists.el
+#	modified:   README.org
+#	modified:   custom.el
+#	modified:   elisp/init-keybinding.el
+#	modified:   elisp/init-module.el
+#	modified:   elisp/init-packages.el
+#	deleted:    eln-cache/30.1-c7a97098/5x5-a61d71cf-67b7b561.eln
+#	deleted:    eln-cache/30.1-c7a97098/add-log-cb3c2979-fa7a08f9.eln
+#	deleted:    eln-cache/30.1-c7a97098/apropos-7c1ecbdf-44813c45.eln
+#	deleted:    eln-cache/30.1-c7a97098/array-b56b5eac-91ff529c.eln
+#	modified:   eln-cache/30.1-c7a97098/auth-source-49df7eef-a00fd184.eln
+#	modified:   eln-cache/30.1-c7a97098/autothemer-841b38a4-0e5e1704.eln
+#	deleted:    eln-cache/30.1-c7a97098/benchmark-0e5ff0c6-c482b0f0.eln
+#	modified:   eln-cache/30.1-c7a97098/browse-url-87f72988-dd4ef4b2.eln
+#	deleted:    eln-cache/30.1-c7a97098/bug-reference-79735dad-fdb87bc1.eln
+#	deleted:    eln-cache/30.1-c7a97098/calc-222b057e-10094081.eln
+#	deleted:    eln-cache/30.1-c7a97098/calc-macs-86f6acaa-c9332f20.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-align-bb265728-f52e3b59.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-cmds-9eab15be-b948a4e2.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-defs-029877ca-f71abc8d.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-engine-ccfcb170-7bd02588.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-fonts-d7d8a7f5-dbf155c3.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-guess-fa39ca73-0a38dd00.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-menus-d370fa63-5d442009.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-mode-515a98a5-401ccd70.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-styles-e4992978-2de7b7f6.eln
+#	deleted:    eln-cache/30.1-c7a97098/cc-vars-6cc3f0fc-4d319bbe.eln
+#	deleted:    eln-cache/30.1-c7a97098/completion-a15d2372-d4c443c3.eln
+#	deleted:    eln-cache/30.1-c7a97098/completion-preview-b8bd3a06-50cb45e9.eln
+#	deleted:    eln-cache/30.1-c7a97098/cond-let-588e3609-9b6077fd.eln
+#	deleted:    eln-cache/30.1-c7a97098/conf-mode-547edb00-1ca93520.eln
+#	deleted:    eln-cache/30.1-c7a97098/consult-imenu-40acb3f2-cead4cb7.eln
+#	deleted:    eln-cache/30.1-c7a97098/consult-info-d2916dae-d6ddff76.eln
+#	deleted:    eln-cache/30.1-c7a97098/crm-f08665f2-690042a0.eln
+#	deleted:    eln-cache/30.1-c7a97098/cua-base-52b0df84-f7aa3951.eln
+#	deleted:    eln-cache/30.1-c7a97098/cursor-sensor-54079dab-3560b4b9.eln
+#	deleted:    eln-cache/30.1-c7a97098/delsel-1c603c42-0b5949cf.eln
+#	deleted:    eln-cache/30.1-c7a97098/diff-b728f3ea-00193357.eln
+#	deleted:    eln-cache/30.1-c7a97098/ehelp-a1fe76fc-46b487a0.eln
+#	deleted:    eln-cache/30.1-c7a97098/elp-7220055f-fe4e35e3.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-alias-37450b7e-d0c39bec.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-banner-67b1ac0e-69f6cf59.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-basic-579b89a7-29190c23.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-cmpl-400ae6db-6acd87e0.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-dirs-01ba21b0-ba9c315f.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-extpipe-d1365569-257abcd0.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-glob-4671cf9a-cdf34d9b.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-hist-71ae7202-b1712a3c.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-ls-b129300b-fcd786fc.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-pred-a894a7a2-9d447e02.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-prompt-cecb9e99-08a92715.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-script-4da6999f-618a652c.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-term-38e49b98-15ba858b.eln
+#	deleted:    eln-cache/30.1-c7a97098/em-unix-603b9912-d860c9db.eln
+#	modified:   eln-cache/30.1-c7a97098/embark-c5adf4ee-e06cfd3f.eln
+#	modified:   eln-cache/30.1-c7a97098/embark-consult-e7ce0953-d1239db2.eln
+#	deleted:    eln-cache/30.1-c7a97098/enriched-ae445047-28597d4a.eln
+#	deleted:    eln-cache/30.1-c7a97098/erc-backend-86323103-55ccc3d9.eln
+#	deleted:    eln-cache/30.1-c7a97098/erc-common-6b830f02-53566e01.eln
+#	deleted:    eln-cache/30.1-c7a97098/erc-compat-89f33f49-51604d74.eln
+#	deleted:    eln-cache/30.1-c7a97098/erc-dc86a8e8-678554a5.eln
+#	deleted:    eln-cache/30.1-c7a97098/erc-networks-99db3898-53559962.eln
+#	deleted:    eln-cache/30.1-c7a97098/erc-pcomplete-f847cf3f-f24958a7.eln
+#	deleted:    eln-cache/30.1-c7a97098/ert-786c6677-9bd8f750.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-arg-8f74f3a2-7cf857a5.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-cmd-40a07574-583ca865.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-ext-9adf61a7-f55c5dc7.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-io-26247c62-4336baec.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-mode-29140b27-c6909982.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-module-367a7193-db8ec401.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-opt-fcb0edfb-7544d771.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-proc-276ac638-dd852afe.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-util-7285fb2f-5746dbc9.eln
+#	deleted:    eln-cache/30.1-c7a97098/esh-var-69967c70-88eb36e9.eln
+#	deleted:    eln-cache/30.1-c7a97098/eshell-bb674bcd-172e80a3.eln
+#	deleted:    eln-cache/30.1-c7a97098/ewoc-6e3ae0bf-af9dba8d.eln
+#	modified:   eln-cache/30.1-c7a97098/ffap-4b3c5789-5a8f6779.eln
+#	deleted:    eln-cache/30.1-c7a97098/files-x-59c65c89-ec3a94e5.eln
+#	deleted:    eln-cache/30.1-c7a97098/finder-cfd3373c-402585b6.eln
+#	deleted:    eln-cache/30.1-c7a97098/flymake-a41dd277-4362ca3d.eln
+#	deleted:    eln-cache/30.1-c7a97098/flyspell-c044604e-3f5ebd8c.eln
+#	modified:   eln-cache/30.1-c7a97098/gnus-cloud-175ba8bd-acf3bb4b.eln
+#	modified:   eln-cache/30.1-c7a97098/gnus-int-7bc862cf-8600171d.eln
+#	deleted:    eln-cache/30.1-c7a97098/ibuf-ext-5624402a-cff74f11.eln
+#	deleted:    eln-cache/30.1-c7a97098/icomplete-92f7cbf4-a2b247e1.eln
+#	deleted:    eln-cache/30.1-c7a97098/imenu-a6693d03-ad631214.eln
+#	deleted:    eln-cache/30.1-c7a97098/ispell-4457395a-3ee19037.eln
+#	deleted:    eln-cache/30.1-c7a97098/lao-util-4c214197-c6785a56.eln
+#	deleted:    eln-cache/30.1-c7a97098/llama-6f632d83-3c76b89e.eln
+#	deleted:    eln-cache/30.1-c7a97098/log-view-a87baa9d-b9a6a23f.eln
+#	deleted:    eln-cache/30.1-c7a97098/make-mode-da8e3e22-33a88470.eln
+#	deleted:    eln-cache/30.1-c7a97098/man-9b8001be-e781027a.eln
+#	deleted:    eln-cache/30.1-c7a97098/misearch-3d1286b0-1adf5942.eln
+#	modified:   eln-cache/30.1-c7a97098/nnimap-91c35abc-88ffa55f.eln
+#	deleted:    eln-cache/30.1-c7a97098/novice-cc2ef463-d2507c3a.eln
+#	deleted:    eln-cache/30.1-c7a97098/nxml-enc-00fb01f2-6ee88347.eln
+#	deleted:    eln-cache/30.1-c7a97098/nxml-mode-aaff3f69-26a749b6.eln
+#	deleted:    eln-cache/30.1-c7a97098/nxml-ns-c16d094f-8c56913e.eln
+#	deleted:    eln-cache/30.1-c7a97098/nxml-outln-d2864190-4f0b304f.eln
+#	deleted:    eln-cache/30.1-c7a97098/nxml-parse-79a53381-47150f34.eln
+#	deleted:    eln-cache/30.1-c7a97098/nxml-rap-9f9d117a-78611cc2.eln
+#	deleted:    eln-cache/30.1-c7a97098/nxml-util-19d2b98f-aaadd0e1.eln
+#	deleted:    eln-cache/30.1-c7a97098/org-attach-c43e367f-a5722b06.eln
+#	deleted:    eln-cache/30.1-c7a97098/org-goto-664054e5-a995edec.eln
+#	modified:   eln-cache/30.1-c7a97098/package-14201d8e-76e382b4.eln
+#	deleted:    eln-cache/30.1-c7a97098/pcmpl-unix-e208196d-c9dcbb16.eln
+#	deleted:    eln-cache/30.1-c7a97098/pcvs-util-35d8f453-32f2a005.eln
+#	deleted:    eln-cache/30.1-c7a97098/python-4c762d55-15054e8b.eln
+#	deleted:    eln-cache/30.1-c7a97098/reporter-2e4bca4f-79dc18d8.eln
+#	deleted:    eln-cache/30.1-c7a97098/reveal-65b32910-cfc18be6.eln
+#	deleted:    eln-cache/30.1-c7a97098/rng-dt-6f4fabb6-635481ac.eln
+#	deleted:    eln-cache/30.1-c7a97098/rng-loc-798ea863-b4adb260.eln
+#	deleted:    eln-cache/30.1-c7a97098/rng-match-9f8fba20-b912f606.eln
+#	deleted:    eln-cache/30.1-c7a97098/rng-nxml-0264101a-d677608b.eln
+#	deleted:    eln-cache/30.1-c7a97098/rng-parse-fda9b375-1ef01fd0.eln
+#	deleted:    eln-cache/30.1-c7a97098/rng-pttrn-3f46aa75-a11fc045.eln
+#	deleted:    eln-cache/30.1-c7a97098/rng-uri-795a248e-abcaee66.eln
+#	deleted:    eln-cache/30.1-c7a97098/rng-util-407ca456-139895f7.eln
+#	deleted:    eln-cache/30.1-c7a97098/rng-valid-c760c082-17713cb5.eln
+#	deleted:    eln-cache/30.1-c7a97098/ruby-mode-fb067360-bd2b2dcb.eln
+#	deleted:    eln-cache/30.1-c7a97098/shr-color-0f0085a8-c993008a.eln
+#	modified:   eln-cache/30.1-c7a97098/subr--trampoline-616c6c2d636f6d706c6574696f6e73_all_completions_0.eln
+#	modified:   eln-cache/30.1-c7a97098/subr--trampoline-657865637574652d6b62642d6d6163726f_execute_kbd_macro_0.eln
+#	modified:   eln-cache/30.1-c7a97098/subr--trampoline-726561642d63686172_read_char_0.eln
+#	deleted:    eln-cache/30.1-c7a97098/subr--trampoline-726561642d6b65792d73657175656e6365_read_key_sequence_0.eln
+#	deleted:    eln-cache/30.1-c7a97098/subr--trampoline-73656c6563742d77696e646f77_select_window_0.eln
+#	deleted:    eln-cache/30.1-c7a97098/subr--trampoline-7365742d77696e646f772d627566666572_set_window_buffer_0.eln
+#	deleted:    eln-cache/30.1-c7a97098/subr--trampoline-7573652d676c6f62616c2d6d6170_use_global_map_0.eln
+#	deleted:    eln-cache/30.1-c7a97098/subr--trampoline-7573652d6c6f63616c2d6d6170_use_local_map_0.eln
+#	modified:   eln-cache/30.1-c7a97098/subr--trampoline-7965732d6f722d6e6f2d70_yes_or_no_p_0.eln
+#	deleted:    eln-cache/30.1-c7a97098/tab-line-e55f541b-52401dcf.eln
+#	deleted:    eln-cache/30.1-c7a97098/tabify-b74f3a50-62904d16.eln
+#	deleted:    eln-cache/30.1-c7a97098/tempo-5756037f-c5fd9703.eln
+#	deleted:    eln-cache/30.1-c7a97098/term-fb034019-f604c902.eln
+#	deleted:    eln-cache/30.1-c7a97098/textsec-check-f6452c0b-2f83bd3f.eln
+#	deleted:    eln-cache/30.1-c7a97098/textsec-f99ec6ab-ca47703b.eln
+#	deleted:    eln-cache/30.1-c7a97098/the-org-mode-expansions-12e6205b-0816c2fd.eln
+#	deleted:    eln-cache/30.1-c7a97098/tmm-12a7d710-34bb6421.eln
+#	deleted:    eln-cache/30.1-c7a97098/tutorial-2418da58-e332b78b.eln
+#	modified:   eln-cache/30.1-c7a97098/url-38944b26-35e9dfe4.eln
+#	modified:   eln-cache/30.1-c7a97098/url-cookie-02b28750-faa3100c.eln
+#	modified:   eln-cache/30.1-c7a97098/url-expand-cf7ffc4e-11e03fe2.eln
+#	modified:   eln-cache/30.1-c7a97098/url-handlers-8b35c993-a04e51f5.eln
+#	modified:   eln-cache/30.1-c7a97098/url-history-a9b2f6e8-8420c44e.eln
+#	modified:   eln-cache/30.1-c7a97098/url-methods-08bf763a-1e00ba8d.eln
+#	modified:   eln-cache/30.1-c7a97098/url-proxy-fc0751f0-db64ce69.eln
+#	modified:   eln-cache/30.1-c7a97098/url-util-28122a93-758c4578.eln
+#	modified:   eln-cache/30.1-c7a97098/use-package-core-b234260b-fd7e40ca.eln
+#	deleted:    eln-cache/30.1-c7a97098/userlock-60e3749c-041ea5ff.eln
+#	deleted:    eln-cache/30.1-c7a97098/vc-bzr-1e531aa5-ddfc69da.eln
+#	deleted:    eln-cache/30.1-c7a97098/vc-cvs-2047e045-b74920d2.eln
+#	deleted:    eln-cache/30.1-c7a97098/vc-d8599e21-81eea2ae.eln
+#	deleted:    eln-cache/30.1-c7a97098/vc-hg-69e20438-68e21053.eln
+#	deleted:    eln-cache/30.1-c7a97098/vc-rcs-6dddc773-c5442ab2.eln
+#	deleted:    eln-cache/30.1-c7a97098/vc-sccs-3997d8ba-979370eb.eln
+#	deleted:    eln-cache/30.1-c7a97098/vc-src-2157d054-548dfa26.eln
+#	deleted:    eln-cache/30.1-c7a97098/vc-svn-e027bd39-b509d718.eln
+#	deleted:    eln-cache/30.1-c7a97098/verilog-mode-b3ec8c2e-146b84c0.eln
+#	deleted:    eln-cache/30.1-c7a97098/vertico-flat-bf240011-7db53e9e.eln
+#	deleted:    eln-cache/30.1-c7a97098/which-func-fb53504e-6b7bde8a.eln
+#	deleted:    eln-cache/30.1-c7a97098/which-key-2ad4ddc2-f54e562f.eln
+#	deleted:    eln-cache/30.1-c7a97098/window-tool-bar-65d43c70-5d7420b7.eln
+#	deleted:    eln-cache/30.1-c7a97098/woman-468654b8-41bc5f3f.eln
+#	deleted:    eln-cache/30.1-c7a97098/xmltok-b50d69e4-e5a01286.eln
+#	modified:   elpa/archives/gnu/archive-contents
+#	modified:   elpa/archives/gnu/archive-contents.signed
+#	modified:   elpa/archives/nongnu/archive-contents
+#	modified:   elpa/archives/nongnu/archive-contents.signed
+#	modified:   eshell/history
+#	modified:   history
+#	modified:   places
+#
+# Untracked files:
+#	auto-save-list/.saves-1652-wan~
+#	auto-save-list/.saves-550-wan~
+#	awesome-tab/
+#	backups/!home!troke!.bashrc.~4~
+#	backups/!home!troke!.bashrc.~5~
+#	backups/!home!troke!.emacs.d!.git!COMMIT_EDITMSG.~1~
+#	backups/!home!troke!.emacs.d!.git!COMMIT_EDITMSG.~2~
+#	backups/!home!troke!.emacs.d!.git!COMMIT_EDITMSG.~3~
+#	backups/!home!troke!.emacs.d!sdcv!sdcv.el.~1~
+#	backups/!home!troke!.emacs.d!sdcv!stardict!langdao-ec-gb.ifo.~1~
+#	backups/!home!troke!.emacs.d!sdcv!stardict!oxford_collocations.ifo.~1~
+#	backups/!home!troke!work!git!org!.git!COMMIT_EDITMSG.~1~
+#	backups/!home!troke!work!git!org!guess-word.org.~1~
+#	backups/!home!troke!work!git!org!ssh.org.~1~
+#	eln-cache/30.1-c7a97098/async-c52095c0-d534028c.eln
+#	eln-cache/30.1-c7a97098/comint-faef15ad-2d94c0d2muDbfa.eln.tmp
+#	eln-cache/30.1-c7a97098/compat-31-bfb59983-39863247.eln
+#	eln-cache/30.1-c7a97098/f-ad8897bf-57bd0257.eln
+#	eln-cache/30.1-c7a97098/let-alist-c9c0fd50-c17bf7b8.eln
+#	eln-cache/30.1-c7a97098/magit-02bce6c9-a192da71.eln
+#	eln-cache/30.1-c7a97098/magit-autorevert-81664ba6-4b182f3e.eln
+#	eln-cache/30.1-c7a97098/magit-bisect-c76d1511-7f60c89a.eln
+#	eln-cache/30.1-c7a97098/magit-blame-f0680bb8-854ff3a7.eln
+#	eln-cache/30.1-c7a97098/magit-bookmark-ec56d939-020b9ea0.eln
+#	eln-cache/30.1-c7a97098/magit-branch-d752d540-c96a6897.eln
+#	eln-cache/30.1-c7a97098/magit-clone-29ad8b51-83499cf5.eln
+#	eln-cache/30.1-c7a97098/magit-commit-85e4adf9-40b3a4f1.eln
+#	eln-cache/30.1-c7a97098/magit-fetch-45aa03b8-8047eb83.eln
+#	eln-cache/30.1-c7a97098/magit-files-824e2d37-df37a4dc.eln
+#	eln-cache/30.1-c7a97098/magit-merge-3a3ddd05-ced10d27.eln
+#	eln-cache/30.1-c7a97098/magit-notes-9fb92a68-cf81d6a3.eln
+#	eln-cache/30.1-c7a97098/magit-pull-9f95bac5-18026fb4.eln
+#	eln-cache/30.1-c7a97098/magit-push-b75b7ec5-967f1d8e.eln
+#	eln-cache/30.1-c7a97098/magit-reflog-802a0d5d-79d08abd.eln
+#	eln-cache/30.1-c7a97098/magit-refs-c256f48b-360c9067.eln
+#	eln-cache/30.1-c7a97098/magit-remote-8f28cc26-4f5515f6.eln
+#	eln-cache/30.1-c7a97098/magit-repos-50aaa417-f95b095b.eln
+#	eln-cache/30.1-c7a97098/magit-reset-a3c55df0-14b16b4c.eln
+#	eln-cache/30.1-c7a97098/magit-sequence-125d75d4-537a6ac9.eln
+#	eln-cache/30.1-c7a97098/magit-stash-18024c0c-7d7a0a39.eln
+#	eln-cache/30.1-c7a97098/magit-status-7f48433f-a04481db.eln
+#	eln-cache/30.1-c7a97098/magit-submodule-1d1324b0-13a5b2e4.eln
+#	eln-cache/30.1-c7a97098/magit-tag-3a7bdf4e-1d87a762.eln
+#	eln-cache/30.1-c7a97098/magit-worktree-670f9ba9-b798fb24.eln
+#	eln-cache/30.1-c7a97098/mc-cycle-cursors-7fb57c18-900bde94.eln
+#	eln-cache/30.1-c7a97098/mc-edit-lines-9cad3408-46d21ea5.eln
+#	eln-cache/30.1-c7a97098/mc-hide-unmatched-lines-mode-88d913b8-0f3bf222.eln
+#	eln-cache/30.1-c7a97098/mc-mark-more-482efef7-75808d73.eln
+#	eln-cache/30.1-c7a97098/mc-mark-pop-12e70728-d6ca9015.eln
+#	eln-cache/30.1-c7a97098/mc-separate-operations-a2ce0a5f-b68080ce.eln
+#	eln-cache/30.1-c7a97098/multiple-cursors-core-707a3af1-bb4961f8.eln
+#	eln-cache/30.1-c7a97098/org-indent-91cb060a-79bb580c.eln
+#	eln-cache/30.1-c7a97098/pyim-autoselector-b752843a-8869c6dd.eln
+#	eln-cache/30.1-c7a97098/pyim-basedict-afeab7c3-62d783e7.eln
+#	eln-cache/30.1-c7a97098/pyim-candidates-57452cf6-6fe1fedd.eln
+#	eln-cache/30.1-c7a97098/pyim-candidates-57452cf6-6fe1feddoWr0aq.eln.tmp
+#	eln-cache/30.1-c7a97098/pyim-cloudim-c018ea9a-fd62d2c2.eln
+#	eln-cache/30.1-c7a97098/pyim-codes-616f3c7c-e3e6c8fb.eln
+#	eln-cache/30.1-c7a97098/pyim-common-d3038bba-c328819c.eln
+#	eln-cache/30.1-c7a97098/pyim-cregexp-37c2cbf5-a0d7cf7f.eln
+#	eln-cache/30.1-c7a97098/pyim-cregexp-utils-97b9d1cf-4507b816.eln
+#	eln-cache/30.1-c7a97098/pyim-cstring-95fefb58-b7c52719.eln
+#	eln-cache/30.1-c7a97098/pyim-d4f05df8-5c041c7d.eln
+#	eln-cache/30.1-c7a97098/pyim-dcache-99977fe2-0f224b4b.eln
+#	eln-cache/30.1-c7a97098/pyim-dhashcache-52acbfb6-86074eb5.eln
+#	eln-cache/30.1-c7a97098/pyim-dict-07de40c3-d669a2c7.eln
+#	eln-cache/30.1-c7a97098/pyim-entered-139e8ef4-2d80356f.eln
+#	eln-cache/30.1-c7a97098/pyim-imobjs-b5e0aa2c-6fc15904.eln
+#	eln-cache/30.1-c7a97098/pyim-indicator-f4e5b7df-04a4085f.eln
+#	eln-cache/30.1-c7a97098/pyim-outcome-b3731ac1-7d593786.eln
+#	eln-cache/30.1-c7a97098/pyim-page-54983d3b-aea2f5df.eln
+#	eln-cache/30.1-c7a97098/pyim-pinyin-4bbe7bd9-6d666044.eln
+#	eln-cache/30.1-c7a97098/pyim-preview-bd346505-47c97b52.eln
+#	eln-cache/30.1-c7a97098/pyim-probe-b69c9571-0dff5eaa.eln
+#	eln-cache/30.1-c7a97098/pyim-process-da029fad-1050aeff.eln
+#	eln-cache/30.1-c7a97098/pyim-punctuation-23dd1cff-827d90ed.eln
+#	eln-cache/30.1-c7a97098/pyim-pymap-42ea1964-16c6ed08.eln
+#	eln-cache/30.1-c7a97098/pyim-scheme-bec18d52-1faf89ee.eln
+#	eln-cache/30.1-c7a97098/rectangular-region-mode-fefe65bb-d3453b23.eln
+#	eln-cache/30.1-c7a97098/s-74efe48c-965beb42.eln
+#	eln-cache/30.1-c7a97098/sort-14dd51e7-c3845f9e.eln
+#	eln-cache/30.1-c7a97098/subr--trampoline-6d616b652d70726f63657373_make_process_0.eln
+#	eln-cache/30.1-c7a97098/subr--trampoline-7265637572736976652d65646974_recursive_edit_0.eln
+#	eln-cache/30.1-c7a97098/subword-mode-expansions-4b3421f8-370f8050.eln
+#	eln-cache/30.1-c7a97098/xr-0817295f-5a4fd1f1.eln
+#	elpa/archives/melpa/
+#	elpa/async-1.9.9.signed
+#	elpa/async-1.9.9/
+#	elpa/chinese-word-at-point-20170811.941/
+#	elpa/compat-31.0.0.1.signed
+#	elpa/compat-31.0.0.1/
+#	elpa/f-20241003.1131/
+#	elpa/fanyi-20230926.1849/
+#	elpa/magit-4.5.0.signed
+#	elpa/magit-4.5.0/
+#	elpa/magit-section-4.5.0.signed
+#	elpa/magit-section-4.5.0/
+#	elpa/multiple-cursors-1.5.0.signed
+#	elpa/multiple-cursors-1.5.0/
+#	elpa/popup-20251231.1622/
+#	elpa/pos-tip-20240209.837/
+#	elpa/pyim-5.3.6.signed
+#	elpa/pyim-5.3.6/
+#	elpa/pyim-basedict-0.5.5.signed
+#	elpa/pyim-basedict-0.5.5/
+#	elpa/s-20220902.1511/
+#	elpa/transient-0.13.3.signed
+#	elpa/transient-0.13.3/
+#	elpa/xr-2.2.signed
+#	elpa/xr-2.2/
+#	emacs-guess-word-game/
+#	projects
+#	pyim/
+#	sdcv/
+#	transient/
+#	var/
+#

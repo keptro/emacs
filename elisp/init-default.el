@@ -35,6 +35,9 @@
 (setq kept-old-versions 2)
 (setq version-control t)
 (setq ibuffer-use-other-window t)
+(delete-selection-mode t)
+
+
 
 
 (prefer-coding-system 'utf-8)

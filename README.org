@@ -35,13 +35,27 @@
 | h       | you can get more command info                                    |                                                            |
 
 *** avy
-*** ... 
+- basic
+  set the two key to exce avy-function
+  1. "C-c j" => *avy-goto-char-timer*
+  2. "C-c l" => *avy-goto-line*
+- advanced
+before you enter the "avy-keys" , type the "f-key" to exce some function
+| key  | decribe                    |
+|------+----------------------------|
+| w    | 复制单词                    |
+| W    | 复制整行                    |
+| k    | 原地剪切单词                |
+| K    | 原地剪切一行                |
+| x    | 剪切单词并且光标移动到单词位置 |
+| y    | 粘贴单词到光标处             |
+| Y    | 粘贴一行到光标处             |
+| t    | 移动单词到光标处             |
+| T    | 移动整行到光标处             |
+| m    | 标记单词                    |
+| 空格 | 标记从光标处到目标之间的内容   |
 
-
-
-
-
-
-
+ref: [[https://karthinks.com/software/avy-can-do-anything/][anv-can-do-everything]]
+*** ...
 
 

@@ -8,8 +8,8 @@
 ;;
 (use-package vertico :ensure t)
 (vertico-mode t)
-(use-package vertico-posframe :ensure t)
-(vertico-posframe-mode t)
+;;(use-package vertico-posframe :ensure t)
+;;(vertico-posframe-mode -1)
 
 
 (marginalia-mode t)
@@ -18,6 +18,9 @@
 (use-package avy :ensure t)
 (setq avy-single-candidate-jump nil)
 (setq avy-timeout-seconds 0.3)
+(setq avy-keys '(?a ?s ?d ?f ?g ?j ?l ?q ?e ?r ?u ?i ?o ?p ?n ?v ?b))
+
+
 
 
 (use-package embark :ensure t)
@@ -29,8 +32,6 @@
 ;; multiple cursors setting
 (use-package multiple-cursors :ensure t)
 (multiple-cursors-mode t)
-
-
 
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/awesome-tab"))
@@ -85,13 +86,15 @@
 (setq guess-word-org-file (f-expand "~/work/git/org/guess-word.org"))
 
 
+;; need to run in the linux
+;; use window it can't work
+;;(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
+;;(require 'eaf)
+;;(require 'eaf-browser)
+;;(require 'eaf-org-previewer)
+;;(require 'eaf-pdf-viewer)
+
+
 (provide 'init-module)
-
-
-
-;; guess word
-
-
-
 
 
