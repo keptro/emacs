@@ -1,0 +1,22 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   README.org
+#	modified:   custom.el
+#	modified:   elisp/init-module.el
+#	modified:   history
+#
+# Untracked files:
+#	awesome-tab/
+#	backups/!home!troke!.emacs.d!.git!COMMIT_EDITMSG.~5~
+#	eln-cache/30.1-c7a97098/mode-local-52e88da7-740c7a12.eln
+#	eln-cache/30.1-c7a97098/org-bullets-97e7a38c-3308bbbc.eln
+#	elpa/org-bullets-20200317.1740/
+#	emacs-guess-word-game/
+#	site-lisp/
+#
