@@ -59,3 +59,171 @@ ref: [[https://karthinks.com/software/avy-can-do-anything/][anv-can-do-everythin
 *** ...
 
 
+* Elisp basic
+** String Function
+*** [length]
+#+BEGIN_SRC emacs-lisp
+(length "abc")
+#+END_SRC
+
+#+RESULTS:
+: 3
+*** [substring]
+#+BEGIN_SRC emacs-lisp
+   (substring "abc123" 0 3)
+  (substring "abc123" 4)
+  ; usage (substring "String" <From> <To>) / (substring "String"  <To>) 
+  ; Position start at <From> and is default to 0 , end of <To>
+#+END_SRC
+
+#+RESULTS:
+: 23
+
+Using <C-h f> to get more info about *String Function* or see the document
+[[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html][Emacs Lisp]] [[http://xahlee.info/emacs/emacs/elisp_string_functions.html][xahlee]]
+** Number
+*** Basic Types
++ 123 -> int type
++ 123. -> int type
++ 123.0 -> float type
+*** Scientific
+#+BEGIN_SRC emacs-lisp
+1e3
+#+END_SRC
+
+#+RESULTS:
+: 1000.0
+*** Binary , Hex , Octal
+#+BEGIN_SRC emacs-lisp
+  ;expression:  #<expr>num
+  #b101
+  #xef
+  #o77
+#+END_SRC
+
+#+RESULTS:
+: 63
+*** Arithmetic
+#+BEGIN_SRC emacs-lisp
+        ;; add
+      (+ 2 3)
+        ;; sub
+      (- 2 3)
+        ;; mul
+      (* 2 3)
+        ;; power
+      (expt 2 3)
+        ;; div
+      (/ 2 3) ;0 because both operands are int
+      (/ 2 3.) ;0
+      (/ 2 3.0) ;0.6666
+        ;; modular
+    ;; modular arithmetic, remainder
+  ;; args must be integers
+  (% 7 4)
+  ;; 3
+
+  ;; s------------------------------
+
+  ;; modular arithmetic, remainder
+  ;; args can be floating number
+  (mod 7 4)
+  ;; 3
+
+  (mod 7.5 4)
+  ;; 3.5
+        ;; Truncate Round Ceiling Floor
+
+  (truncate 3.5) ; 3
+  (round 3.5) ;4
+  (ceiling 3.5) ;4
+  (floor 3.5) ;3
+#+END_SRC
+
+** Boolean
+*** function
++ and
+  #+BEGIN_SRC emacs-lisp
+    (and t nil) ;nil similar to NULL
+    (and t nil t t t ) ;nil
+  #+END_SRC
++ or
+  #+BEGIN_SRC emacs-lisp
+    (or t nil) ;t
+    (or t nil t t t ); t
+  #+END_SRC
++ not
+  #+BEGIN_SRC emacs-lisp
+    (not nil) ;t
+    (not t) ; nil
+    #+END_SRC
+
+ref: [[http://xahlee.info/emacs/emacs/elisp_boolean.html][Boolean]]
+** Global Variables
+*** setq
++ [(setq <var> <value>)]
++ [(setq <var1> <value1> <var2> <value2> ...)]
++ set one or more varibales. return the last value
+#+BEGIN_SRC emacs-lisp
+  (setq x 3)
+  (setq x1 1 x2 2 x3 3)
+  (message "x1=%d x2=%d x3=%d" x1 x2 x3)
+#+END_SRC
+
+#+RESULTS:
+: x1=1 x2=2 x3=3
+*** defvar
++ [(defvar SYMBOL &option <INITVALUE> <DOCSTRING>)]
++ define SYMBOL as a variable , and return SYMBOL
+#+BEGIN_SRC emacs-lisp
+  (defvar my-var 4 "这是我的变量")
+  (message "my-var=%d" my-var)
+#+END_SRC
+
+#+RESULTS:
+: my-var=4
+** Local Variables
+*** let
++ [(let (<var1> <var2> ...) <body>)]
++ The body is one or more lisp expressions. The body's last expression's value is returned.
+#+BEGIN_SRC emacs-lisp
+(let (a b)
+ (setq a 3)
+ (setq b 4)
+ (+ a b)
+) ;  7
+#+END_SRC
+
+* Block of Expression
+** progn
+when you need to group several expression together as one single expression
+this can be done with [progn] , it will return the last expression 
+#+BEGIN_SRC emacs-lisp
+  (progn
+    (message "a")
+    (message "b"))
+
+  (progn
+    (setq x 1)
+    (setq y 2)
+  (+ x y)
+  ;;similar to sequential control construct , programm in the progn will be executed sequentially , like C {}
+#+END_SRC
+
+#+RESULTS:
+: b
+** prog1 , prog2
+similar to progn , prog1 return the first expression , prog2 return the second expression
+#+BEGIN_SRC emacs-lisp
+  (prog1
+    (message "a")
+    (message "b"))
+#+END_SRC
+
+#+RESULTS:
+: a
+#+BEGIN_SRC emacs-lisp
+  (prog2
+    (message "a")
+    (message "b"))
+#+END_SRC

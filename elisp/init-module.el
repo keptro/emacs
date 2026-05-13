@@ -86,6 +86,13 @@
 (setq guess-word-org-file (f-expand "~/work/git/org/guess-word.org"))
 
 
+
+(use-package org-bullets
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+
+
 ;; need to run in the linux
 ;; use window it can't work
 ;;(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
