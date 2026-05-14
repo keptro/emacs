@@ -2,19 +2,24 @@
 * Emacs Learnig
 ** Basic
 *** Move
-| key | move              |
-|-----+-------------------|
-| C-f | forward-char      |
-| C-b | backward-char     |
-| C-a | beginning of line |
-| C-e | end of line       |
-| C-n | next-line         |
-| C-p | previous-line     |
-| M-f | forward-word      |
-| M-b | backward-word     |
-|     |                   |
-|     |                   |
-|     |                   |
+| key   | move                 |
+|-------+----------------------|
+| C-F   | Forward-Char         |
+| C-B   | Backward-Char        |
+| C-A   | Beginning Of Line    |
+| C-E   | End Of Line          |
+| C-N   | Next-Line            |
+| C-P   | Previous-line        |
+| C-S-e | select-end-of-line   |
+| C-S-n | select-next-line     |
+| C-S-p | select-previous-line |
+| C-S-f | select-forward-char  |
+| C-S-b | select-backward-char |
+| M-f   | forward-word         |
+| M-b   | backward-word        |
+| M-S-f | select-forward-word  |
+| M-S-b | select-backward-word |
+|       |                      |
 
 *** Useful Commad 
 
@@ -267,11 +272,328 @@ similar to progn , prog1 return the first expression , prog2 return the second e
 
 ** cond expression
 + [(cond (<condition1> <body1>) (<condition2> <body2>) ... (t <body>)]
-+ like switch
++ like switch , "t <body>" mean 'default'
 #+BEGIN_SRC emacs-lisp
-(setq ux 11)
+(setq ux 2)
   (cond
-    ((eq ux 10) (message "ux = %d" ux))
-    ((not (eq ux 10)) (message "ux not 10 , ux = %d" ux))
-  (t (message "not ux")))
+    ((eq ux 1) (message "ux = %d" ux))
+    ((eq ux 2) (message "ux = %d" ux))
+  (t (message "ux = %d")))
+#+END_SRC
+
+#+RESULTS:
+: ux = 2
+
+* Loop
+
+** While Loop
++ [(while <test> <body>)]
+
+#+BEGIN_SRC emacs-lisp
+  (let ((x 0))
+    (while (< x 4)
+     (print (format "number is %d" x))
+     (setq x (+ 1 x)))) ; here need to attention , not write (setq x (1+x)) ,it wrong
+  ;; because (1+x) will be regarded as a symbol
+#+END_SRC
+
+#+BEGIN_SRC  emacs-lisp
+  (let (x y) ;define x and y 
+    (setq x [0 1 2 3 4 5]) ; assign value to x
+    (setq y 0) ; assign value to y
+
+    (while (< y (length x))
+      (print (format "x[%d] = %d" y (aref x y)))
+      (setq y (+ 1 y))))
+
+#+END_SRC
+** dotimes Loop
++ [(dotimes (<VAR> <COUNT>) <BODY>)]
++ like 'for'
+
+#+BEGIN_SRC emacs-lisp
+  (dotimes (i 4)
+    (print (format "i=%d" i)))
+#+END_SRC
+
+
+#+BEGIN_SRC emacs-lisp
+  (let (x)
+    (setq x [1 2 3 4 5])
+
+    (dotimes (i (length x))
+      (print (format "x=%d" (aref x i))))
+    )
+  #+END_SRC
+
+
+* list
++ *List* like the linked list data structure
++ each element can be any type
++ some algorithm for list
++ use *"'()"* to define a list
++ use (list <var1> <var2> ...)
+| function | decribe                                      |
+|----------+----------------------------------------------|
+| car      | get value of first element                   |
+| cdr      | get rest of list after remove the first item |
+| push     | add one item to the beginning of list        |
+| pop      | remove the first element                     |
+
+#+BEGIN_SRC  emacs-lisp
+  (let (x i)
+    (setq x '(1 2 "hello"))
+    (push "you" x)
+    (while (not (eq nil x))
+      (print (car x))
+      (pop x))
+    )
+#+END_SRC
+
+#+BEGIN_SRC  emacs-lisp
+        (let (x y)
+          (setq x '(1 3 "a" "b"))
+          (setq y '())
+  	(setq y (cdr x)) 
+    (while (not (eq nil y))
+      (print (car y))
+      (pop y))
+  )
+#+END_SRC
+
+#+BEGIN_SRC  emacs-lisp
+(list 1 2 3 )
+#+END_SRC
+* vector
++ *vector* is a ordered sequence of values , like array data structure ,
++ the vector size is fixed
++ any element can be any type
+
+** Create Vector
++ [(make-vector <length> <value>)]
++ [(vector <a> <b> ...)]
++ using "[]" symbol
+  
+#+BEGIN_SRC emacs-lisp
+  (make-vector 4 1); [1 1 1 1]
+  (vector 1 2 3 4) ; [1 2 3 4]
+  (setq x [1 2 "a" "b"]);[1 2 "a" "b"]
+#+END_SRC
+
+#+RESULTS:
+: [1 2 "a" "b"]
+
+** Some function
+*** Fill Vector
+#+BEGIN_SRC emacs-lisp
+  (setq x [1 2 3 4]) ; [1 2 3 4]
+  (fillarray x 1) ;[1 1 1 1]
+#+END_SRC
+
+#+RESULTS:
+: [1 1 1 1]
+*** Get Element
++ [(aref <array> <n>)]
+#+BEGIN_SRC emacs-lisp
+  (setq x [1 2 3 4])
+  (aref x 0) ;1
+#+END_SRC
+*** Change Element
++ [(aset <array> <n> <newvar>)]
+#+BEGIN_SRC emacs-lisp
+  (setq x [1 2 3 4])
+  (aref x 2) ;3
+  (aset x 2 5) ; change 3 -> 5
+  (aref x 2) ;5
+#+END_SRC
+
+#+RESULTS:
+: 5
+
+* Function
+** define function
++ [(defun <function name> (<param1> <param2> ...) <optional doc_string decribe> <body>)]
+#+BEGIN_SRC emacs-lisp
+  (defun insert_hello()
+    "insert_hello"
+    (insert "hello"))
+  (insert_hello) ;function recall without parameter
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+    (defun add_num(x y)
+      "add_num"
+      (+ x y))
+    (add_num 1 2) ;function recall have parameter
+#+END_SRC
+
+
+
+** optional parameters
++ [&optional <p1> <p2> ..]
+
+  #+BEGIN_SRC emacs-lisp
+(defun ff (aa bb &optional cc dd)
+  "test optional params"
+  (interactive)
+  (message "%s %s %s %s" aa bb cc dd))
+
+;; call it
+(ff 1 2)
+;; "1 2 nil nil"
+
+(ff 1 2 3)
+;; "1 2 3 nil"
+
+(ff 1 2 3 4)
+;; "1 2 3 4"
+  #+END_SRC
+
+** Lambda function
++ [(lambda (<params>) <&optional doc-string> <&optional-interactive-clause> <body> )]
++ lambda is regarded as a function
+  #+BEGIN_SRC emacs-lisp
+   ((lambda (x) (+ 1 x)) 3)
+  #+END_SRC
+
+** Exit Loop or Function
+*** throw and catch
++ throw like *break*
++ catch like *goto*
++ [(catch <tag> <body>)] [(throw <tag> <passValue>)]
+  
+#+BEGIN_SRC emacs-lisp
+
+#+END_SRC
+
+*** error
+
+
+* TODO The knowledge points have not been fully learned
+
+* Elisp Practical
+** cursor position
+#+BEGIN_SRC emacs-lisp
+  (point) ;this returns the current cursor position
+  ;; Left of first char in buffer is 1
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+;; return the position of the beginning/end of region
+  (region-beginning)
+  (region-end)
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+;; position for beginning/ending of current line
+(line-beginning-position)
+(line-end-position)
+
+;; returns the position for the beginning/end of buffer, taking account of narrow-to-region
+(point-min)
+(point-max)
+#+END_SRC
+
+** Move Cursor
+#+BEGIN_SRC emacs-lisp
+  ;; move cursor to position 39
+  (goto-char 39)
+
+  ;; move cursor by 4 chars
+  (forward-char 4)
+  (backward-char 4)
+
+  ;; move cursor to the location of a string
+  ;; returns the new position
+  (search-forward "some") ; to end of “some”
+  (search-backward "some") ; to beginning of “some”
+
+  ;; move cursor to the location matched by a regex
+  ;; returns the new position
+  (re-search-forward "[0-9]") ; digit
+  (re-search-backward "[0-9]")
+
+  ;; move cursor to the first char that's not “a to z”
+  ;; Returns the distance traveled.
+  (skip-chars-forward "a-z")
+  (skip-chars-backward "a-z")
+#+END_SRC
+
+** Delete Insert Change Text
+#+BEGIN_SRC emacs-lisp
+  ;; delete 9 chars starting at current cursor pos
+  (delete-char 9)
+
+  ;; deleting text from pos 3 to 10
+  (delete-region 3 10)
+
+  ;; insert string at current cursor position
+  (insert "i ♥ cats")
+
+  ;; get the string from pos 71 to 300
+  (setq x (buffer-substring 71 300))
+
+  ;; capitalize letters in a region
+  (capitalize-region 71 300)
+
+#+END_SRC
+
+** Buffer
+#+BEGIN_SRC emacs-lisp
+  ;; return the name of current buffer
+  (buffer-name)
+
+  ;; return the full path of current file
+  (buffer-file-name)
+
+  ;; switch to the buffer named xyz
+  (set-buffer "xyz")
+
+  ;; save current buffer
+  (save-buffer)
+
+  ;; close a buffer named xyz
+  (kill-buffer "xyz")
+
+  ;; temporarily sets a buffer as current to work with
+  (with-current-buffer "xyz"
+    ;; do something here. delete/insert text, etc.
+  )
+  
+#+END_SRC
+** File
+#+BEGIN_SRC emacs-lisp
+  ;; open a file (in a buffer)
+  (find-file "~/")
+
+  ;; same as “Save As”.
+  (write-file path)
+
+  ;; insert file into current position
+  (insert-file-contents path)
+
+  ;; append a text block to file
+  (append-to-file start-pos end-pos path)
+
+  ;; renaming file
+  (rename-file file-name new-name)
+
+  ;; copying file
+  (copy-file old-name new-name)
+
+  ;; deleting file
+  (delete-file file-name)
+
+  ;; get dir path
+  (file-name-directory full-path)
+
+  ;; get filename part
+  (file-name-nondirectory full-path)
+
+  ;; get filename's suffix
+  (file-name-extension file-name)
+
+  ;; get filename sans suffix
+  (file-name-sans-extension file-name)
+  
 #+END_SRC

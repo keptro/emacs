@@ -7,12 +7,12 @@
    '("d80952c58cf1b06d936b1392c38230b74ae1a2a6729594770762dc0779ac66b7"
      default))
  '(package-selected-packages
-   '(autothemer avy company cond-let consult dash embark embark-consult
-		expand-region f fanyi gruvbox-theme
+   '(ace-window autothemer avy company cond-let consult dash embark
+		embark-consult expand-region f fanyi gruvbox-theme
 		immersive-translate keycast llama magit marginalia
 		multiple-cursors orderless org-bullets posframe pyim
 		pyim-basedict transient vertico vertico-posframe
-		with-editor)))
+		with-editor yasnippet)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

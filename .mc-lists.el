@@ -4,8 +4,12 @@
 (setq mc/cmds-to-run-for-all
       '(
 	eval-buffer
+	insert-register
+	string-rectangle
 	))
 
 (setq mc/cmds-to-run-once
       '(
+	find-file-read-only
+	org-self-insert-command
 	))
