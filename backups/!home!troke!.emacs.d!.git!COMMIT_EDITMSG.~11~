@@ -1,0 +1,61 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   .mc-lists.el
+#	modified:   README.org
+#	renamed:    auto-save-list/.saves-558-wan~ -> auto-save-list/.saves-1248-wan~
+#	new file:   backups/!home!troke!.emacs.d!.git!COMMIT_EDITMSG.~10~
+#	deleted:    backups/!home!troke!.emacs.d!.git!COMMIT_EDITMSG.~4~
+#	new file:   backups/!home!troke!.emacs.d!sdcv!stardict!langdao-ce-gb.ifo.~1~
+#	new file:   backups/!home!troke!.emacs.d!sdcv!stardict!langdao-ce-gb.ifo.~2~
+#	modified:   custom.el
+#	renamed:    elisp/init-function.el -> elisp/avy-function.el
+#	modified:   elisp/init-keybinding.el
+#	modified:   elisp/init-module.el
+#	new file:   eln-cache/30.1-c7a97098/ace-window-92bc4d21-39e1a3d3.eln
+#	new file:   eln-cache/30.1-c7a97098/ace-window-posframe-f0d20153-ca41f493.eln
+#	new file:   eln-cache/30.1-c7a97098/edebug-ddc96ebf-6c2f6311.eln
+#	new file:   eln-cache/30.1-c7a97098/enriched-ae445047-28597d4a.eln
+#	new file:   eln-cache/30.1-c7a97098/lao-util-4c214197-c6785a56.eln
+#	new file:   eln-cache/30.1-c7a97098/org-goto-664054e5-a995edec.eln
+#	new file:   eln-cache/30.1-c7a97098/pcmpl-gnu-5ece415b-a65f7239.eln
+#	new file:   eln-cache/30.1-c7a97098/yasnippet-ea598332-5defba58.eln
+#	new file:   elpa/ace-window-20220911.358/ace-window-autoloads.el
+#	new file:   elpa/ace-window-20220911.358/ace-window-pkg.el
+#	new file:   elpa/ace-window-20220911.358/ace-window-posframe.el
+#	new file:   elpa/ace-window-20220911.358/ace-window-posframe.elc
+#	new file:   elpa/ace-window-20220911.358/ace-window.el
+#	new file:   elpa/ace-window-20220911.358/ace-window.elc
+#	modified:   elpa/archives/gnu/archive-contents
+#	modified:   elpa/archives/gnu/archive-contents.signed
+#	modified:   elpa/archives/melpa/archive-contents
+#	new file:   elpa/yasnippet-20250602.1342/doc/faq.org
+#	new file:   elpa/yasnippet-20250602.1342/doc/index.org
+#	new file:   elpa/yasnippet-20250602.1342/doc/snippet-development.org
+#	new file:   elpa/yasnippet-20250602.1342/doc/snippet-expansion.org
+#	new file:   elpa/yasnippet-20250602.1342/doc/snippet-menu.org
+#	new file:   elpa/yasnippet-20250602.1342/doc/snippet-organization.org
+#	new file:   elpa/yasnippet-20250602.1342/doc/snippet-reference.org
+#	new file:   elpa/yasnippet-20250602.1342/yasnippet-autoloads.el
+#	new file:   elpa/yasnippet-20250602.1342/yasnippet-debug.el
+#	new file:   elpa/yasnippet-20250602.1342/yasnippet-debug.elc
+#	new file:   elpa/yasnippet-20250602.1342/yasnippet-pkg.el
+#	new file:   elpa/yasnippet-20250602.1342/yasnippet.el
+#	new file:   elpa/yasnippet-20250602.1342/yasnippet.elc
+#	modified:   history
+#	modified:   places
+#	modified:   pyim/dcache/pyim-dhashcache-icode2word
+#	modified:   pyim/dcache/pyim-dhashcache-ishortcode2word
+#	modified:   pyim/dcache/pyim-dhashcache-iword2count
+#	modified:   pyim/dcache/pyim-dhashcache-iword2count-log
+#	modified:   pyim/dcache/pyim-dhashcache-iword2priority
+#	new file:   sdcv/stardict/langdao-ce-gb.dict.dz
+#	new file:   sdcv/stardict/langdao-ce-gb.idx
+#	new file:   sdcv/stardict/langdao-ce-gb.idx.oft
+#	new file:   sdcv/stardict/langdao-ce-gb.ifo
+#

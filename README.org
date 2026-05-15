@@ -494,6 +494,14 @@ similar to progn , prog1 return the first expression , prog2 return the second e
 (point-max)
 #+END_SRC
 
+#+begin_src emacs-lisp :tangle yes
+  ;; run <body> and restore cursor position and buffer
+  ; (save-excursion <BODY>)
+  (save-excursion
+    ; code here
+    )
+#+end_src
+
 ** Move Cursor
 #+BEGIN_SRC emacs-lisp
   ;; move cursor to position 39
@@ -569,7 +577,6 @@ similar to progn , prog1 return the first expression , prog2 return the second e
   ;; same as “Save As”.
   (write-file path)
 
-  ;; insert file into current position
   (insert-file-contents path)
 
   ;; append a text block to file
@@ -597,3 +604,5 @@ similar to progn , prog1 return the first expression , prog2 return the second e
   (file-name-sans-extension file-name)
   
 #+END_SRC
+
+

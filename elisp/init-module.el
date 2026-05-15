@@ -11,7 +11,7 @@
 ;;(use-package vertico-posframe :ensure t)
 ;;(vertico-posframe-mode -1)
 
-
+(use-package marginalia :ensure t)
 (marginalia-mode t)
 
 ;;
@@ -78,8 +78,6 @@
 	"langdao-ce"
 	))
 
-(require 'avy-function)
-
 
 (use-package f :ensure t)
 (use-package guess-word						     
@@ -126,7 +124,15 @@
   :ensure t
   :config
   (yas-global-mode t)
+  (setq yas-snippet-dirs
+	'(/home/troke/.emacs.d/elpa/yasnippet-snippets-20251215.1231/snippets)
+	)
   )
+
+(use-package surround
+  :ensure t
+  :bind-keymap ("C-c s" . surround-keymap))
+
 
 ;; need to run in the linux
 ;; use window it can't work
@@ -135,6 +141,11 @@
 ;;(require 'eaf-browser)
 ;;(require 'eaf-org-previewer)
 ;;(require 'eaf-pdf-viewer)
+
+
+(add-to-list 'load-path "~/.emacs.d/elisp/function/")
+(progn
+  (require 'avy-function))
 
 
 (provide 'init-module)

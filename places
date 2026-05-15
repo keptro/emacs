@@ -1,19 +1,29 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/troke/.emacs.d/README.org" . 10397)
- ("/home/troke/.emacs.d/elisp/init-keybinding.el" . 581)
- ("/home/troke/.emacs.d/elpa/ace-window-20220911.358/ace-window.el"
-  . 23429)
- ("/home/troke/.emacs.d/elisp/" . 59)
- ("/home/troke/.emacs.d/elisp/init-module.el" . 1563)
+(("/usr/share/emacs/30.1/lisp/use-package/use-package-core.el.gz"
+  . 1321)
+ ("/home/troke/" (dired-filename . "/home/troke/.emacs.d"))
+ ("/home/troke/.emacs.d/elpa/yasnippet-20250602.1342/doc/"
+  (dired-filename
+   . "/home/troke/.emacs.d/elpa/yasnippet-20250602.1342/doc/snippet-menu.org"))
+ ("/home/troke/.emacs.d/elpa/yasnippet-20250602.1342/"
+  (dired-filename
+   . "/home/troke/.emacs.d/elpa/yasnippet-20250602.1342/.."))
+ ("/home/troke/.emacs.d/elpa/yasnippet-snippets-20251215.1231/snippets/fundamental-mode/mode-line"
+  . 117)
+ ("/home/troke/.emacs.d/elpa/yasnippet-snippets-20251215.1231/snippets/"
+  (dired-filename
+   . "/home/troke/.emacs.d/elpa/yasnippet-snippets-20251215.1231/snippets/.."))
+ ("/home/troke/.emacs.d/elpa/yasnippet-snippets-20251215.1231/"
+  (dired-filename
+   . "/home/troke/.emacs.d/elpa/yasnippet-snippets-20251215.1231/.."))
+ ("/home/troke/.emacs.d/elpa/"
+  (dired-filename . "/home/troke/.emacs.d/elpa/.."))
+ ("/home/troke/.emacs.d/README.org" . 13756)
  ("/home/troke/.emacs.d/"
   (dired-filename . "/home/troke/.emacs.d/elisp"))
- ("/home/troke/.emacs.d/elisp/avy-function.el" . 1485)
- ("/home/troke/.emacs.d/sdcv/"
-  (dired-filename . "/home/troke/.emacs.d/sdcv/stardict"))
- ("/home/troke/.emacs.d/sdcv/stardict/"
-  (dired-filename
-   . "/home/troke/.emacs.d/sdcv/stardict/langdao-ce-gb.ifo"))
- ("/home/troke/.emacs.d/sdcv/stardict/langdao-ce-gb.ifo" . 96)
+ ("/home/troke/.emacs.d/elisp/"
+  (dired-filename . "/home/troke/.emacs.d/elisp/init-module.el"))
+ ("/home/troke/.emacs.d/elisp/init-module.el" . 3103)
  ("/home/troke/.bashrc" . 3674)
  ("/home/troke/work/git/"
   (dired-filename . "/home/troke/work/git/org"))
@@ -26,8 +36,7 @@
  ("/home/troke/work/git/algorithm/bits/"
   (dired-filename . "/home/troke/work/git/algorithm"))
  ("/home/troke/work/git/algorithm/bits/bits" . 46)
- ("/home/troke/.emacs.d/elpa/"
-  (dired-filename . "/home/troke/.emacs.d"))
+ ("/home/troke/.emacs.d/elisp/init-keybinding.el" . 99)
  ("/usr/share/emacs/30.1/lisp/simple.el.gz" . 383826)
  ("/home/troke/.emacs.d/elpa/embark-1.2/embark.el" . 159867)
  ("/home/troke/.emacs.d/elpa/avy-0.5.0/avy.el" . 31540)

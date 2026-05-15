@@ -11,8 +11,9 @@
 		embark-consult expand-region f fanyi gruvbox-theme
 		immersive-translate keycast llama magit marginalia
 		multiple-cursors orderless org-bullets posframe pyim
-		pyim-basedict transient vertico vertico-posframe
-		with-editor yasnippet)))
+		pyim-basedict surround transient vertico
+		vertico-posframe with-editor yasnippet
+		yasnippet-snippets)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
